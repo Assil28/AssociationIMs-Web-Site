@@ -7,13 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { MembresComponent } from './membres/membres.component';
 
 @NgModule({
+  declarations: [
+    AppComponent, // Composant principal
+    HomeComponent, // Déclarer HomeComponent
+    MembresComponent // Déclarer MembresComponent
+  ],
   imports: [
     BrowserModule,
-    AppComponent,
-    RouterModule.forRoot(routes),
-    HomeComponent,
-    MembresComponent
-     // Import the standalone component
+    RouterModule.forRoot(routes) // Configurer les routes
   ],
   bootstrap: [AppComponent]
 })
