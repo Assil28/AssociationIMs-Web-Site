@@ -1,0 +1,38 @@
+/* Drawer */
+.drawer {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .translate-x-0 {
+    transform: translateX(0);
+  }
+  
+  .-translate-x-full {
+    transform: translateX(-100%);
+  }
+  
+  /* Material Datepicker Full Width */
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  /* Overlay */
+  .fixed {
+    position: fixed;
+  }
+  
+  .inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bg-black {
+    background-color: black;
+  }
+  
+  .bg-opacity-50 {
+    opacity: 0.5;
+  }
+  

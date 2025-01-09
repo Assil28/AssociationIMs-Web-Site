@@ -1,0 +1,29 @@
+<!-- calendar.component.html -->
+<div class="calendar">
+    <div class="calendar-header">
+      <button (click)="previousMonth()">&lt;</button>
+      <h2>{{ months[currentDate.getMonth()] }} {{ currentDate.getFullYear() }}</h2>
+      <button (click)="nextMonth()">&gt;</button>
+    </div>
+    
+    <table>
+      <thead>
+        <tr>
+          <th *ngFor="let day of days">{{ day }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let week of weeks">
+          <td *ngFor="let day of week" 
+              [class.selected]="isSelected(day)"
+              (click)="selectDate(day)">
+            {{ day }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="selected-date" *ngIf="selectedDate">
+      Date sélectionnée: {{ selectedDate | date:'dd/MM/yyyy' }}
+    </div>
+  </div>

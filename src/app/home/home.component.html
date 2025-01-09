@@ -1,4 +1,28 @@
-  <main>
-    <app-acceuil></app-acceuil>
-  </main>
-  
+<main>
+  <!-- Bouton d'agenda (fixé à gauche) -->
+  <div class="fixed top-1/2 left-4 transform -translate-y-1/2">
+    <button class="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition"
+      (click)="toggleDrawer()">
+      <i class="fas fa-calendar-alt"></i> <!-- Icône d'agenda -->
+    </button>
+  </div>
+
+  <!-- Drawer (apparaît depuis la gauche) -->
+  <div class="fixed top-0 left-0 h-full bg-white shadow-lg w-80 transform transition-transform"
+    [ngClass]="{ 'translate-x-0': isDrawerOpen, '-translate-x-full': !isDrawerOpen }">
+    <div class="p-4">
+      <h2 class="text-xl font-bold mb-4">Agenda</h2>
+      <!-- Contenu de l'agenda -->
+      <div>
+        <app-calendar></app-calendar>
+
+        <!-- Ajoutez ici votre logique d'agenda -->
+      </div>
+      <button class="bg-red-500 text-white p-2 rounded mt-4 hover:bg-red-600" (click)="toggleDrawer()">
+        Fermer
+      </button>
+    </div>
+  </div>
+
+  <app-acceuil></app-acceuil>
+</main>
