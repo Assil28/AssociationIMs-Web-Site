@@ -1,28 +1,37 @@
 <!-- footer.component.html -->
 <footer class="bg-gray-900 text-white py-8">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-3 gap-8">
-        <div>
-          <h3 class="font-bold mb-4">NOS PARTENAIRES</h3>
-          <ul>
-            <li>Université de Haute Alsace</li>
-            <li>Région de Mulhouse</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold mb-4">NOS RÉSEAUX</h3>
-          <div class="flex space-x-4">
-            <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
-          </div>
-        </div>
-        <div>
-          <h3 class="font-bold mb-4">CONTACT</h3>
-          <p>Université de Haute Alsace</p>
-          <p>contact.associationim.mulhouse.fr</p>
-          <p>Mentions Légales</p>
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-bold mb-4">NOS PARTENAIRES</h3>
+        <ul>
+          <li><div class="logo flex items-center">
+            <a routerLink="/" class="text-xl font-bold flex items-center">
+              <img src="assets/fstLogo.png" alt="Logo" class="h-8 w-8 mr-2">
+              Université de Haute Alsace
+            </a>
+          </div></li>
+          <li >Région de Mulhouse</li>
+          <li></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">NOS RÉSEAUX</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
         </div>
       </div>
+      <div>
+        <h3 class="font-bold mb-4">CONTACT</h3>
+
+        <p> <i class="fas fa-map-marker-alt text-2xl text-blue-600 mb-4"></i>
+          Université de Haute Alsace</p>
+        <p>              <i class="fas fa-envelope text-2xl text-blue-600 mb-4"></i>
+          contact.associationim.mulhouse.fr</p>
+    
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
