@@ -3,31 +3,20 @@
   <div class="container mx-auto flex justify-between items-center px-4">
     <!-- Logo -->
     <div class="logo">
-      <a routerLink="/" class="text-xl font-bold">
-        AMI UHA
+      <a href="/" class="text-xl font-bold flex items-center">
+        <img src="assets/logo.png" alt="Logo" class="h-14 w-14 mr-2">
+       AMI UHA
       </a>
     </div>
-
-    <!-- Navigation Links -->
-    <div class="flex items-center space-x-8">
-      <a routerLink="/accueil" 
-         routerLinkActive="font-bold"
-         class="hover:text-gray-300 transition-colors">
-        Accueil
-      </a>
-      <a routerLink="/membres" 
-         routerLinkActive="font-bold"
-         class="hover:text-gray-300 transition-colors">
-        Membres
-      </a>
-      <a routerLink="/contact" 
-         routerLinkActive="font-bold"
-         class="hover:text-gray-300 transition-colors">
-        Contact
-      </a>
-      
-      <!-- User Icon -->
-      <button class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
+   
+  
+      <!-- Menu (mobile et desktop) -->
+      <div class="hidden md:flex space-x-10">
+        <a href="/" class="text-white hover:text-blue-300">Accueil</a>
+        <a href="/membres" class="text-white hover:text-blue-300">Membres</a>
+        <a href="/contact" class="text-white hover:text-blue-300">Contact</a>
+         <!-- User Icon -->
+         <a href="/login"> <button class="w-8 h-6 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors" >
         <svg xmlns="http://www.w3.org/2000/svg" 
              class="h-5 w-5" 
              viewBox="0 0 20 20" 
@@ -37,6 +26,9 @@
                 clip-rule="evenodd" />
         </svg>
       </button>
+    </a>
+      </div>
+  
+      
     </div>
-  </div>
 </nav>
