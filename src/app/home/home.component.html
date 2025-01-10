@@ -11,17 +11,18 @@
   <div class="fixed top-0 left-0 h-full bg-white shadow-lg w-80 transform transition-transform"
     [ngClass]="{ 'translate-x-0': isDrawerOpen, '-translate-x-full': !isDrawerOpen }">
     <div class="p-4">
-      <h2 class="text-xl font-bold mb-4">Agenda</h2>
-      <!-- Contenu de l'agenda -->
-      <div>
-        <app-calendar></app-calendar>
-
-        <!-- Ajoutez ici votre logique d'agenda -->
+      <div class="flex justify-between items-center">
+        <h2 class="text-xl font-bold">Agenda</h2>
+        <button class="text-gray-600 hover:text-gray-800" (click)="toggleDrawer()">
+          <i class="fas fa-times text-xl"></i> <!-- Icône de fermeture -->
+        </button>
       </div>
-      <button class="bg-red-500 text-white p-2 rounded mt-4 hover:bg-red-600" (click)="toggleDrawer()">
-        Fermer
-      </button>
+      <div class="mt-4">
+        <!-- Contenu de l'agenda -->
+        <app-calendar></app-calendar>
+      </div>
     </div>
+
   </div>
 
   <app-acceuil></app-acceuil>
